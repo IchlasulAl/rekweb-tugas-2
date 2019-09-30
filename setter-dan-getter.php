@@ -8,8 +8,8 @@ class Produk{
     private $judul,
            $penulis,
            $penerbit,
-           $harga;
-    protected   $diskon = 0;
+           $harga,
+           $diskon = 0;
 
     
 
@@ -47,11 +47,19 @@ class Produk{
         return $this->penerbit;
     }
 
-    puhlic function setHarga($harga){
-        $this->harga=$harga
+    public function setHarga($harga){
+        $this->harga=$harga;
     }
     public function getHarga(){
         return $this->harga-($this->harga * $this->diskon /100);
+    }
+
+    public function setDiskon($diskon){
+        $this->diskon = $diskon;
+    }
+
+    public function getDiskon(){
+        return $this->diskon;
     }
 
     public function getLabel(){
@@ -90,9 +98,7 @@ class Game extends Produk{
         $this->waktuMain = $waktuMain;
     }
 
-    public function setDiskon($diskon){
-        $this->diskon = $diskon;
-    }
+
 
     public function getInfoProduk(){
         $str = "Game : " . parent::getInfoProduk() . " ~ {$this->waktuMain} Jam.";
@@ -122,5 +128,5 @@ echo $produk2->getHarga();
 echo "<hr>";
 
 
-echo $produk1->setJudul("test");
+echo $produk1->getPenulis();
 echo $produk1->getJudul();
