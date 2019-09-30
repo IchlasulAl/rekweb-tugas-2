@@ -124,7 +124,7 @@ class Game extends Produk implements InfoProduk{
 
 }
 
-class cetakInfoProduk {
+class CetakInfoProduk {
     public $daftarProduk = array();
 
 public function tambahProduk(Produk $produk){
@@ -145,7 +145,7 @@ public function tambahProduk(Produk $produk){
 $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
 $produk2 = new Game("Uncharted", "Neil Druckmann", "Sony Computer", 250000,50);
 
-$cetakProduk = new cetakInfoProduk();
+$cetakProduk = new cCtakInfoProduk();
 $cetakProduk->tambahProduk($produk1);
 $cetakProduk->tambahProduk($produk2);
 
