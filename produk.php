@@ -5,12 +5,14 @@
 // game
 
 class Produk{
-    public $judul,
-           $penulis,
-           $pnerbit,
-           $harga;
+    public $judul = "judul",
+           $penulis = "penulis",
+           $pnerbit = "penerbit",
+           $harga = 0;
 }
 
 $produk1 = new Produk();
 
-var_dump ($produk1);
+$produk1->judul = "Black Clover";
+
+var_dump ($produk1);s
