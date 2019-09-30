@@ -5,8 +5,12 @@
 // game
 
 class Produk{
-
+    public $judul,
+           $penulis,
+           $pnerbit,
+           $harga;
 }
 
 $produk1 = new Produk();
-$produk2 = new Produk();
+
+var_dump ($produk1);
